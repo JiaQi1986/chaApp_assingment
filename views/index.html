@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Chat App</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Welcom to the Chat App<span id="chat-count"></span></h1>
+    <div class="row" id="login">
+      <div class="col-md-12">
+        <div class="form-group">
+          <label for="username">Name</label>
+          <input class="form-control" id="username" placeholder="What is your nick name?">
+        </div>
+        <button type="submit" class="btn btn-success" id="show-btn">Submit</button>
+      </div>
+    </div>
+
+    <div class="row" id="content">
+      <div class="col-md-12" id="chatcon"></div>
+      <div class="col-md-12">
+        <textarea id="msgcon" class="form-control" rows="3"></textarea>
+        <button type="submit" class="btn btn-success" id="send-btn">Submit</button>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="js/vendor/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
